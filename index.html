@@ -87,8 +87,10 @@
           </p>
           <p>
             What drives me is the fascination with how hardware, software, and control theory converge to create truly
-            autonomous systems. Especially machines that can sense, reason, and act independently. From building a real-time
-            perception to planning and control pipeline on a physical robot, to designing analogue sensor circuits and FPGA
+            autonomous systems. Especially machines that can sense, reason, and act independently. From building a
+            real-time
+            perception to planning and control pipeline on a physical robot, to designing analogue sensor circuits and
+            FPGA
             processors from scratch, I'm drawn to every layer of this stack.
           </p>
           <p>
@@ -357,17 +359,12 @@
         <button class="filter-btn" data-filter="software">Software</button>
       </div>
       <div class="projects-grid">
-
-        <!-- ======= Y3 S1: ECE4078 PenguinPi [FEATURED] ======= -->
-        <article class="proj-card featured" data-category="robotics">
-          <div class="proj-badge">Featured</div>
+        <article class="proj-card" data-category="robotics">
           <div class="proj-images">
             <div class="img-carousel">
-              <img src="images/ece4078_1.jpeg" alt="PenguinPi Robot" class="active" />
-              <img src="images/ece4078_2.jpeg" alt="PenguinPi SLAM" />
-              <img src="images/ece4078_3.jpeg" alt="PenguinPi fruit detection" />
-              <img src="images/ece4078_4.jpeg" alt="PenguinPi arena" />
-              <img src="images/ece4078_5.jpeg" alt="PenguinPi navigation" />
+              <img src="images/ece4076_1.png" alt="Fingerprint image processing lab" class="active" />
+              <img src="images/ece4076_2.png" alt="Image stitching and feature matching" />
+              <img src="images/ece4076_3.png" alt="Machine learning model evaluation" />
               <div class="carousel-dots"></div>
               <button class="carousel-prev">&#8592;</button>
               <button class="carousel-next">&#8594;</button>
@@ -375,45 +372,90 @@
           </div>
           <div class="proj-body">
             <div class="proj-meta">
-              <span class="proj-year">Y3 S1 · ECE4078</span>
-              <span class="proj-type robotics">Robotics · AI · Vision</span>
+              <span class="proj-year">Y3 S2 · ECE4076</span>
+              <span class="proj-type robotics">Machine Learning · Computer Vision</span>
             </div>
-            <h3>PenguinPi Autonomous Fruit-Collection Robot</h3>
+            <h3>Computer Vision &amp; Machine Learning Laboratory Work</h3>
             <p>
-              Developed a fully autonomous robotic system capable of perceiving, mapping, and navigating a simulated
-              supermarket arena to collect fruit targets. The project spanned five milestones — from basic teleoperation
-              through to fully autonomous simultaneous mapping and navigation.
+              Completed a series of advanced laboratory tasks applying machine learning and computer vision techniques
+              to real-world image analysis problems, spanning classification, object detection, and deep learning model
+              training.
+            </p>
+            <div class="proj-details">
+              <h4>What I Covered</h4>
+              <ul>
+                <li><strong>Lab 1:</strong> Enhances fingerprint images using filtering and orientation analysis, then
+                  detects minutiae for fingerprint matching.</li>
+                <li><strong>Lab 2:</strong> Implements image stitching by using feature matching, homography estimation,
+                  and blending to align and merge two overlapping images.</li>
+                <li><strong>Lab 3:</strong> Implements k-means clustering to group image pixels by colour (and
+                  optionally location) and uses those groups to create superpixels and region proposals.</li>
+                <li><strong>Lab 4:</strong> Using linear regression to train a model from known data and then predict
+                  values for new examples, including life expectancy and corrupted image restoration.</li>
+              </ul>
+              <h4>Key Outcomes</h4>
+              <ul>
+                <li>Developed practical proficiency in deep learning frameworks and computer vision pipelines.</li>
+                <li>Gained hands-on experience training, evaluating, and improving ML models for engineering
+                  applications.</li>
+              </ul>
+            </div>
+            <div class="proj-tech">
+              <span>Python</span><span>Deep Learning</span><span>CNN</span><span>Computer Vision</span><span>Object
+                Detection</span><span>Transfer Learning</span>
+            </div>
+          </div>
+        </article>
+        <article class="proj-card" data-category="software">
+          <div class="proj-images">
+            <div class="img-carousel">
+              <img src="images/mec5832_1.png" alt="SCADA project overview" class="active" />
+              <img src="images/mec5832_2.png" alt="SCADA system architecture" />
+              <img src="images/mec5832_3.png" alt="SCADA instrumentation design" />
+              <div class="carousel-dots"></div>
+              <button class="carousel-prev">&#8592;</button>
+              <button class="carousel-next">&#8594;</button>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-year">Y3 S2 · MEC5882</span>
+              <span class="proj-type software">SCADA · Instrumentation</span>
+            </div>
+            <h3>Industrial SCADA Monitoring System — Aquaponics Facility</h3>
+            <p>
+              Designed a high-level SCADA architecture for a 20-hectare aquaponics facility in Cameron Highlands,
+              Malaysia, integrating tilapia aquaculture, hydroponic lettuce/strawberry production, and environmental
+              monitoring.
             </p>
             <div class="proj-details">
               <h4>What I Built</h4>
               <ul>
-                <li><strong>SLAM (EKF-based):</strong> Implemented the Extended Kalman Filter for Simultaneous
-                  Localisation and Mapping using ArUco marker detection via OpenCV. Performed wheel and camera
-                  calibration for accurate state estimation.</li>
-                <li><strong>Object Recognition (YOLOv8):</strong> Trained a custom YOLO model to classify 8
-                  fruit/vegetable types. Collected, annotated, and augmented a dataset using Roboflow, achieving robust
-                  detection across varied lighting and occlusion.</li>
-                <li><strong>Target Pose Estimation:</strong> Estimated 3D object locations by fusing YOLO bounding
-                  boxes, SLAM pose estimates, and known object dimensions into a global map.</li>
-                <li><strong>Autonomous Navigation (A*):</strong> Implemented A* path planning with obstacle avoidance on
-                  an occupancy map derived from SLAM and object localisation. Integrated PID-based waypoint tracking for
-                  smooth robot control.</li>
-                <li><strong>Final Demo:</strong> The robot successfully performed fully autonomous mapping and shopping
-                  list navigation in a live competition-style arena, navigating to targets within 0.3 m using on-board
-                  perception and planning.</li>
+                <li>Defined facility overview, stakeholder requirements, and functional/non-functional requirements
+                  for
+                  a commercial-scale aquaponics SCADA system.</li>
+                <li>Designed a hierarchical SCADA architecture — supervisory layer (HMI, alarms, trend logging),
+                  control
+                  layer (PLCs, feedback loops), and sensor/instrumentation layer (pH, DO, flow rate, temperature,
+                  water
+                  level).</li>
+                <li>Developed detailed instrumentation strategy for a strawberry NFT greenhouse subsystem, including
+                  sensor selection, calibration, and alarm philosophy.</li>
+                <li>Performed physical sensor evaluation: characterised a selected sensor's transfer function, error
+                  analysis, and performance against datasheet specifications.</li>
+                <li>Produced facility concept architecture diagrams, P&amp;ID-style instrumentation maps, and a
+                  comprehensive group technical report.</li>
               </ul>
               <h4>Key Outcomes</h4>
               <ul>
-                <li>Built a complete perception–planning–control pipeline from sensor data to physical robot action.
-                </li>
-                <li>Developed proficiency in ROS concepts, computer vision, probabilistic robotics, and real-time
-                  systems on embedded Linux hardware.</li>
-                <li>Collaborated in a team environment through multiple software integration milestones.</li>
+                <li>Applied systems engineering principles to a realistic industrial automation problem.</li>
+                <li>Developed skills in SCADA design methodology, sensor instrumentation, and technical report writing
+                  for engineering proposals.</li>
               </ul>
             </div>
             <div class="proj-tech">
-              <span>Python</span><span>YOLOv8</span><span>OpenCV</span><span>EKF SLAM</span><span>A*
-                Planning</span><span>PID Control</span><span>Linux</span><span>ROS</span>
+              <span>SCADA</span><span>PLC Design</span><span>Instrumentation</span><span>HMI</span><span>Systems
+                Engineering</span>
             </div>
           </div>
         </article>
@@ -477,7 +519,8 @@
               <ul>
                 <li>Gained end-to-end experience in sensor design: from physical transducer to calibrated digital
                   measurement.</li>
-                <li>Applied real-world signal processing and statistical evaluation (MSE, JND, repeatability, accuracy)
+                <li>Applied real-world signal processing and statistical evaluation (MSE, JND, repeatability,
+                  accuracy)
                   to validate system performance.</li>
               </ul>
             </div>
@@ -488,65 +531,11 @@
           </div>
         </article>
 
-        <!-- ======= P3: MEC5882 SCADA ======= -->
-        <article class="proj-card" data-category="software">
-          <div class="proj-images">
-            <div class="img-carousel">
-              <img src="images/mec5832_1.png" alt="SCADA project overview" class="active" />
-              <img src="images/mec5832_2.png" alt="SCADA system architecture" />
-              <img src="images/mec5832_3.png" alt="SCADA instrumentation design" />
-              <div class="carousel-dots"></div>
-              <button class="carousel-prev">&#8592;</button>
-              <button class="carousel-next">&#8594;</button>
-            </div>
-          </div>
-          <div class="proj-body">
-            <div class="proj-meta">
-              <span class="proj-year">Y3 S2 · MEC5882</span>
-              <span class="proj-type software">SCADA · Instrumentation</span>
-            </div>
-            <h3>Industrial SCADA Monitoring System — Aquaponics Facility</h3>
-            <p>
-              Designed a high-level SCADA architecture for a 20-hectare aquaponics facility in Cameron Highlands,
-              Malaysia, integrating tilapia aquaculture, hydroponic lettuce/strawberry production, and environmental
-              monitoring.
-            </p>
-            <div class="proj-details">
-              <h4>What I Built</h4>
-              <ul>
-                <li>Defined facility overview, stakeholder requirements, and functional/non-functional requirements for
-                  a commercial-scale aquaponics SCADA system.</li>
-                <li>Designed a hierarchical SCADA architecture — supervisory layer (HMI, alarms, trend logging), control
-                  layer (PLCs, feedback loops), and sensor/instrumentation layer (pH, DO, flow rate, temperature, water
-                  level).</li>
-                <li>Developed detailed instrumentation strategy for a strawberry NFT greenhouse subsystem, including
-                  sensor selection, calibration, and alarm philosophy.</li>
-                <li>Performed physical sensor evaluation: characterised a selected sensor's transfer function, error
-                  analysis, and performance against datasheet specifications.</li>
-                <li>Produced facility concept architecture diagrams, P&amp;ID-style instrumentation maps, and a
-                  comprehensive group technical report.</li>
-              </ul>
-              <h4>Key Outcomes</h4>
-              <ul>
-                <li>Applied systems engineering principles to a realistic industrial automation problem.</li>
-                <li>Developed skills in SCADA design methodology, sensor instrumentation, and technical report writing
-                  for engineering proposals.</li>
-              </ul>
-            </div>
-            <div class="proj-tech">
-              <span>SCADA</span><span>PLC Design</span><span>Instrumentation</span><span>HMI</span><span>Systems
-                Engineering</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ======= P4: ECE3161 Audio Synthesis + RMS ======= -->
+        <!-- ======= Y3 S1: ECE3161 True RMS Converter ======= -->
         <article class="proj-card" data-category="electronics">
           <div class="proj-images">
             <div class="img-carousel">
-              <img src="images/ece2131_1.jpeg" alt="ECE2131 Breadboard power supply prototype" class="active" />
-              <img src="images/ece2131_2.png" alt="ECE2131 LTspice schematic design" />
-              <img src="images/ece2131_3.png" alt="ECE2131 circuit measurements" />
+              <img src="images/ece3161_1.jpeg" alt="ECE3161 True RMS-to-DC converter circuit" class="active" />
               <div class="carousel-dots"></div>
               <button class="carousel-prev">&#8592;</button>
               <button class="carousel-next">&#8594;</button>
@@ -555,56 +544,49 @@
           <div class="proj-body">
             <div class="proj-meta">
               <span class="proj-year">Y3 S1 · ECE3161</span>
-              <span class="proj-type electronics">Analogue Electronics · DSP</span>
+              <span class="proj-type electronics">Analogue Electronics · Precision Circuits</span>
             </div>
-            <h3>Audio Synthesis Circuit &amp; True RMS-to-DC Converter</h3>
+            <h3>True RMS-to-DC Converter — Analogue Circuit Design</h3>
             <p>
-              Designed and built two distinct analogue circuit systems: a complete audio signal processing pipeline from
-              microphone to speaker output, and a true RMS-to-DC converter for AC/DC signal measurement.
+              Designed and built a true RMS-to-DC converter capable of computing the RMS value of arbitrary AC and DC
+              waveforms from first principles, without using dedicated RMS ICs.
             </p>
             <div class="proj-details">
-              <h4>Audio Synthesis Circuit</h4>
+              <h4>What I Built</h4>
               <ul>
-                <li>Designed a preamplifier circuit using an electret microphone and TL974 op-amp to condition audio
-                  signals for the STM32 ADC input range.</li>
-                <li>Integrated an STM32 microcontroller running a DSP binary to perform audio filtering, processing, and
-                  signal conversion.</li>
-                <li>Connected STM32 DAC output to an LM386 audio amplifier and headphone output; fine-tuned audio
-                  quality through iterative hardware testing.</li>
-              </ul>
-              <h4>True RMS-to-DC Converter</h4>
-              <ul>
-                <li>Designed and built an analogue circuit to compute the true RMS value of arbitrary AC and DC signals
-                  without using dedicated RMS ICs.</li>
-                <li>Developed sub-circuits for full-wave rectification, square-law conversion (multiplier), low-pass
-                  filtering, and logarithmic square-root computation.</li>
-                <li>Validated design accuracy through LTspice simulation and breadboard prototyping across varying
-                  waveforms and frequencies.</li>
+                <li>Designed the complete analogue circuit implementing the mathematical RMS definition: squared →
+                  averaged → square-rooted, using op-amp sub-circuits for each stage.</li>
+                <li>Developed sub-circuits for full-wave rectification, square-law conversion (analogue multiplier),
+                  low-pass filtering (averaging), and logarithmic square-root computation.</li>
+                <li>Verified each sub-circuit individually using LTspice simulation before integration onto a single
+                  breadboard prototype.</li>
+                <li>Tested the combined circuit across DC, sinusoidal, triangular, and square waveforms at varying
+                  amplitudes and frequencies to validate RMS accuracy.</li>
               </ul>
               <h4>Key Outcomes</h4>
               <ul>
-                <li>Deepened understanding of op-amp circuit design, audio engineering, and precision analogue
-                  computation.</li>
-                <li>Gained hands-on experience with LTspice simulation-to-hardware workflow and STM32 peripheral
-                  integration.</li>
+                <li>Deepened understanding of precision analogue computation, op-amp non-linear circuit design, and
+                  signal processing hardware.</li>
+                <li>Practised LTspice simulation-to-hardware validation methodology for analogue circuit design.</li>
               </ul>
             </div>
             <div class="proj-tech">
-              <span>LTspice</span><span>STM32</span><span>Op-Amp Design</span><span>Analogue
-                Circuits</span><span>DSP</span><span>Audio Engineering</span>
+              <span>LTspice</span><span>Op-Amp Design</span><span>Analogue Circuits</span><span>Precision
+                Electronics</span><span>Signal Analysis</span>
             </div>
           </div>
         </article>
 
-        <!-- ======= P5: Warman Competition ======= -->
-        <article class="proj-card" data-category="mechanical">
+        <!-- ======= Y3 S1: ECE4078 PenguinPi [FEATURED] ======= -->
+        <article class="proj-card featured" data-category="robotics">
+          <div class="proj-badge">Featured</div>
           <div class="proj-images">
             <div class="img-carousel">
-              <img src="images/mec2402_1.jpeg" alt="Warman robot assembly" class="active" />
-              <img src="images/mec2402_2.jpeg" alt="Warman robot testing" />
-              <img src="images/mec2402_3.jpeg" alt="Warman robot competition" />
-              <img src="images/mec2402_4.jpeg" alt="Warman robot in action" />
-              <img src="images/mec2402_cad.PNG" alt="Warman CAD front steering design" />
+              <img src="images/ece4078_1.jpeg" alt="PenguinPi Robot" class="active" />
+              <img src="images/ece4078_2.jpeg" alt="PenguinPi SLAM" />
+              <img src="images/ece4078_3.jpeg" alt="PenguinPi fruit detection" />
+              <img src="images/ece4078_4.jpeg" alt="PenguinPi arena" />
+              <img src="images/ece4078_5.jpeg" alt="PenguinPi navigation" />
               <div class="carousel-dots"></div>
               <button class="carousel-prev">&#8592;</button>
               <button class="carousel-next">&#8594;</button>
@@ -612,40 +594,153 @@
           </div>
           <div class="proj-body">
             <div class="proj-meta">
-              <span class="proj-year">Y2 S2 · MEC2402</span>
-              <span class="proj-type mechanical">Mechanical · Robotics · Competition</span>
+              <span class="proj-year">Y3 S1 · ECE4078</span>
+              <span class="proj-type robotics">Robotics · AI · Vision</span>
             </div>
-            <h3>Warman Design &amp; Build Competition 2025</h3>
+            <h3>PenguinPi Autonomous Fruit-Collection Robot</h3>
             <p>
-              Collaborated in a multidisciplinary team of 5 (mechanical, electrical, and software) to design and build a
-              fully autonomous robot for the 2025 Weir Warman Competition — collecting three uniquely sized balls
-              (tennis, racquetball, and table tennis) across dynamic terrain, including a pivoting seesaw, within 120
-              seconds.
+              Developed a fully autonomous robotic system capable of perceiving, mapping, and navigating a simulated
+              supermarket arena to collect fruit targets. The project spanned five milestones — from basic
+              teleoperation
+              through to fully autonomous simultaneous mapping and navigation.
             </p>
             <div class="proj-details">
               <h4>What I Built</h4>
               <ul>
-                <li>Led mechanical system integration and control logic — handled both physical assembly and system
-                  programming.</li>
-                <li>Designed a <strong>"Smash-Tighten-Lift" collection mechanism</strong> with an adaptive chassis for
-                  dynamic terrain traversal (seesaw and narrow zones), within strict 400mm cubic constraints.</li>
-                <li>Contributed to SolidWorks CAD modelling, including the front steering assembly design.</li>
-                <li>Implemented preprogrammed autonomous routines with onboard microcontroller, high-powered graded
-                  motors, and sensors for accurate ball positioning and seesaw navigation.</li>
-                <li>Coordinated testing sessions to validate subsystem compatibility and ensure reliable performance
-                  under competition conditions.</li>
+                <li><strong>SLAM (EKF-based):</strong> Implemented the Extended Kalman Filter for Simultaneous
+                  Localisation and Mapping using ArUco marker detection via OpenCV. Performed wheel and camera
+                  calibration for accurate state estimation.</li>
+                <li><strong>Object Recognition (YOLOv8):</strong> Trained a custom YOLO model to classify 8
+                  fruit/vegetable types. Collected, annotated, and augmented a dataset using Roboflow, achieving
+                  robust
+                  detection across varied lighting and occlusion.</li>
+                <li><strong>Target Pose Estimation:</strong> Estimated 3D object locations by fusing YOLO bounding
+                  boxes, SLAM pose estimates, and known object dimensions into a global map.</li>
+                <li><strong>Autonomous Navigation (A*):</strong> Implemented A* path planning with obstacle avoidance
+                  on
+                  an occupancy map derived from SLAM and object localisation. Integrated PID-based waypoint tracking
+                  for
+                  smooth robot control.</li>
+                <li><strong>Final Demo:</strong> The robot successfully performed fully autonomous mapping and
+                  shopping
+                  list navigation in a live competition-style arena, navigating to targets within 0.3 m using on-board
+                  perception and planning.</li>
               </ul>
               <h4>Key Outcomes</h4>
               <ul>
-                <li>Robot successfully completed competition tasks during trials — achieved reliable ball collection and
-                  deposit within time constraints.</li>
-                <li>Gained deep experience in cross-functional teamwork, rapid prototyping, CAD/physical integration,
-                  and competition engineering under pressure.</li>
+                <li>Built a complete perception–planning–control pipeline from sensor data to physical robot action.
+                </li>
+                <li>Developed proficiency in ROS concepts, computer vision, probabilistic robotics, and real-time
+                  systems on embedded Linux hardware.</li>
+                <li>Collaborated in a team environment through multiple software integration milestones.</li>
               </ul>
             </div>
             <div class="proj-tech">
-              <span>SolidWorks</span><span>Arduino / Microcontroller</span><span>Autonomous
-                Control</span><span>Mechanical Design</span><span>Rapid Prototyping</span>
+              <span>Python</span><span>YOLOv8</span><span>OpenCV</span><span>EKF SLAM</span><span>A*
+                Planning</span><span>PID Control</span><span>Linux</span><span>ROS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ======= P8: MEC2405 Refrigeration ======= -->
+        <article class="proj-card" data-category="mechanical">
+          <div class="proj-images">
+            <div class="img-carousel">
+              <img src="images/mec2405_1.png" alt="Refrigeration system setup" class="active" />
+              <img src="images/mec2405_2.png" alt="Thermodynamic analysis results" />
+              <div class="carousel-dots"></div>
+              <button class="carousel-prev">&#8592;</button>
+              <button class="carousel-next">&#8594;</button>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-year">Y3 S1 · MEC2405</span>
+              <span class="proj-type mechanical">Thermodynamics · Data Analysis</span>
+            </div>
+            <h3>Refrigeration System Characterisation &amp; Thermodynamic Analysis</h3>
+            <p>
+              Performed experimental testing and thermodynamic analysis of a refrigeration compressor system using
+              R-134a refrigerant, analysing performance across three thermal loading conditions to evaluate the
+              Coefficient of Performance (COP).
+            </p>
+            <div class="proj-details">
+              <h4>What I Did</h4>
+              <ul>
+                <li>Operated the refrigeration test rig under three conditions: baseline (no heating), condenser-side
+                  heating (T<sub>H</sub> &gt; T<sub>L</sub>), and evaporator-side heating (T<sub>L</sub> &gt;
+                  T<sub>H</sub>).</li>
+                <li>Collected raw sensor data (10 temperature sensors, 2 pressure gauges, flow meters) and processed
+                  results using TESTA thermodynamic analysis software.</li>
+                <li>Calculated water-side heat transfer, compressor heat loss, mass flow rates, and enthalpy at each
+                  thermodynamic state point.</li>
+                <li>Identified non-ideal behaviours: condenser outlet subcooling deviation, evaporator inlet
+                  temperature
+                  above saturation, and energy imbalance from heat losses.</li>
+                <li>Ran T–s diagram simulations and compared results against ideal Rankine cycle behaviour to explain
+                  deviations.</li>
+                <li>Documented practical recommendations for improving COP in real-world refrigeration systems.</li>
+              </ul>
+              <h4>Key Outcomes</h4>
+              <ul>
+                <li>Applied thermodynamic theory to a real experimental rig, bridging textbook concepts with practical
+                  measurement uncertainty.</li>
+                <li>Developed skills in data quality awareness, thermodynamic state analysis, and engineering
+                  technical
+                  reporting.</li>
+              </ul>
+            </div>
+            <div class="proj-tech">
+              <span>Thermodynamics</span><span>TESTA Software</span><span>R-134a</span><span>Data
+                Analysis</span><span>Technical Reporting</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ======= Y2 S2: ECE2071 Audio Synthesis Circuit ======= -->
+        <article class="proj-card" data-category="electronics">
+          <div class="proj-images">
+            <div class="img-carousel">
+              <img src="images/ece2071_1.png" alt="ECE2071 Audio synthesis circuit" class="active" />
+              <div class="carousel-dots"></div>
+              <button class="carousel-prev">&#8592;</button>
+              <button class="carousel-next">&#8594;</button>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-year">Y2 S2 · ECE2071</span>
+              <span class="proj-type electronics">Analogue Electronics · Embedded · DSP</span>
+            </div>
+            <h3>Audio Synthesis Circuit — Microphone to Speaker Pipeline</h3>
+            <p>
+              Designed and built a complete audio signal processing pipeline from electret microphone input through
+              STM32 digital processing to speaker output, implementing analogue front-end conditioning and back-end
+              amplification in hardware.
+            </p>
+            <div class="proj-details">
+              <h4>What I Built</h4>
+              <ul>
+                <li>Designed a preamplifier circuit using an electret microphone and TL974 op-amp to condition audio
+                  signals into the STM32 ADC input voltage range.</li>
+                <li>Integrated an STM32 microcontroller running a DSP binary to perform real-time audio filtering,
+                  signal processing, and DAC output conversion.</li>
+                <li>Connected STM32 DAC output to an LM386 audio power amplifier driving a headphone/speaker output;
+                  fine-tuned audio quality through iterative hardware testing and gain adjustment.</li>
+                <li>Used LTspice to simulate and verify the preamplifier and amplifier circuits before breadboard
+                  implementation.</li>
+              </ul>
+              <h4>Key Outcomes</h4>
+              <ul>
+                <li>Gained hands-on experience with the full analogue-digital-analogue audio signal chain and STM32
+                  peripheral integration (ADC/DAC).</li>
+                <li>Developed practical skills in audio circuit design, op-amp configuration, and embedded DSP
+                  interfacing.</li>
+              </ul>
+            </div>
+            <div class="proj-tech">
+              <span>STM32</span><span>LTspice</span><span>Op-Amp Design</span><span>Analogue
+                Circuits</span><span>DSP</span><span>Audio Engineering</span>
             </div>
           </div>
         </article>
@@ -704,6 +799,64 @@
           </div>
         </article>
 
+        <!-- ======= P5: Warman Competition ======= -->
+        <article class="proj-card" data-category="mechanical">
+          <div class="proj-images">
+            <div class="img-carousel">
+              <img src="images/mec2402_1.jpeg" alt="Warman robot assembly" class="active" />
+              <img src="images/mec2402_2.jpeg" alt="Warman robot testing" />
+              <img src="images/mec2402_3.jpeg" alt="Warman robot competition" />
+              <img src="images/mec2402_4.jpeg" alt="Warman robot in action" />
+              <img src="images/mec2402_cad.PNG" alt="Warman CAD front steering design" />
+              <div class="carousel-dots"></div>
+              <button class="carousel-prev">&#8592;</button>
+              <button class="carousel-next">&#8594;</button>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-year">Y2 S2 · MEC2402</span>
+              <span class="proj-type mechanical">Mechanical · Robotics · Competition</span>
+            </div>
+            <h3>Warman Design &amp; Build Competition 2025</h3>
+            <p>
+              Collaborated in a multidisciplinary team of 5 (mechanical, electrical, and software) to design and build
+              a
+              fully autonomous robot for the 2025 Weir Warman Competition — collecting three uniquely sized balls
+              (tennis, racquetball, and table tennis) across dynamic terrain, including a pivoting seesaw, within 120
+              seconds.
+            </p>
+            <div class="proj-details">
+              <h4>What I Built</h4>
+              <ul>
+                <li>Led mechanical system integration and software control logic — handled both physical assembly and
+                  system
+                  programming.</li>
+                <li>Designed a <strong>"Smash-Tighten-Lift" collection mechanism</strong> with an adaptive chassis for
+                  dynamic terrain traversal (seesaw and narrow zones), within strict 400mm cubic constraints.</li>
+                <li>Contributed to SolidWorks CAD modelling and programming, including the front steering assembly
+                  design and system control logic.</li>
+                <li>Implemented preprogrammed routines movement with key timing and critical path analysis to ensure
+                  the robot completed the course successfully.</li>
+                <li>Coordinated testing sessions to validate subsystem compatibility and ensure reliable performance
+                  under competition conditions.</li>
+              </ul>
+              <h4>Key Outcomes</h4>
+              <ul>
+                <li>Robot successfully completed competition tasks during trials — achieved reliable ball collection
+                  and
+                  deposit within time constraints.</li>
+                <li>Gained deep experience in cross-functional teamwork, rapid prototyping, CAD/physical integration,
+                  and competition engineering under pressure.</li>
+              </ul>
+            </div>
+            <div class="proj-tech">
+              <span>SolidWorks</span><span>Arduino / Microcontroller</span><span>Autonomous
+                Control</span><span>Mechanical Design</span><span>Rapid Prototyping</span>
+            </div>
+          </div>
+        </article>
+
         <!-- ======= P7: ECE2072 FPGA ======= -->
         <article class="proj-card" data-category="electronics">
           <div class="proj-images">
@@ -722,7 +875,8 @@
             </div>
             <h3>FPGA-Based 16-bit Processor Design (DE10-Lite)</h3>
             <p>
-              Designed and implemented a custom 16-bit processor on the DE10-Lite FPGA board using Hardware Description
+              Designed and implemented a custom 16-bit processor on the DE10-Lite FPGA board using Hardware
+              Description
               Language (HDL), including a full instruction set, datapath, and control unit architecture.
             </p>
             <div class="proj-details">
@@ -747,7 +901,8 @@
               <ul>
                 <li>Built a working processor from first principles in HDL — deepened understanding of digital logic,
                   computer architecture, and hardware-software interface.</li>
-                <li>Optimised design for resource efficiency on FPGA fabric while meeting real-time timing constraints.
+                <li>Optimised design for resource efficiency on FPGA fabric while meeting real-time timing
+                  constraints.
                 </li>
               </ul>
             </div>
@@ -758,12 +913,12 @@
           </div>
         </article>
 
-        <!-- ======= P8: MEC2405 Refrigeration ======= -->
+        <!-- ======= P10: ENG1011 Truss ======= -->
         <article class="proj-card" data-category="mechanical">
           <div class="proj-images">
             <div class="img-carousel">
-              <img src="images/mec2405_1.png" alt="Refrigeration system setup" class="active" />
-              <img src="images/mec2405_2.png" alt="Thermodynamic analysis results" />
+              <img src="images/eng1011_1.jpeg" alt="Truss design testing" class="active" />
+              <img src="images/eng1011_3.jpeg" alt="Truss competition" />
               <div class="carousel-dots"></div>
               <button class="carousel-prev">&#8592;</button>
               <button class="carousel-next">&#8594;</button>
@@ -771,42 +926,38 @@
           </div>
           <div class="proj-body">
             <div class="proj-meta">
-              <span class="proj-year">Y3 S1 · MEC2405</span>
-              <span class="proj-type mechanical">Thermodynamics · Data Analysis</span>
+              <span class="proj-year">Y1 S2 · ENG1011</span>
+              <span class="proj-type mechanical">Structural Engineering · Design</span>
             </div>
-            <h3>Refrigeration System Characterisation &amp; Thermodynamic Analysis</h3>
+            <h3>Optimised Truss Bridge Design &amp; Load Testing</h3>
             <p>
-              Performed experimental testing and thermodynamic analysis of a refrigeration compressor system using
-              R-134a refrigerant, analysing performance across three thermal loading conditions to evaluate the
-              Coefficient of Performance (COP).
+              Designed, 3D-printed, and structurally tested a Meccano-and-PLA truss bridge to maximise load-to-weight
+              efficiency over a variable span, applying structural analysis and design optimisation principles.
             </p>
             <div class="proj-details">
-              <h4>What I Did</h4>
+              <h4>What I Built</h4>
               <ul>
-                <li>Operated the refrigeration test rig under three conditions: baseline (no heating), condenser-side
-                  heating (T<sub>H</sub> &gt; T<sub>L</sub>), and evaporator-side heating (T<sub>L</sub> &gt;
-                  T<sub>H</sub>).</li>
-                <li>Collected raw sensor data (10 temperature sensors, 2 pressure gauges, flow meters) and processed
-                  results using TESTA thermodynamic analysis software.</li>
-                <li>Calculated water-side heat transfer, compressor heat loss, mass flow rates, and enthalpy at each
-                  thermodynamic state point.</li>
-                <li>Identified non-ideal behaviours: condenser outlet subcooling deviation, evaporator inlet temperature
-                  above saturation, and energy imbalance from heat losses.</li>
-                <li>Ran T–s diagram simulations and compared results against ideal Rankine cycle behaviour to explain
-                  deviations.</li>
-                <li>Documented practical recommendations for improving COP in real-world refrigeration systems.</li>
+                <li>Applied truss analysis (method of joints/sections) to select an optimal topology balancing load
+                  distribution, material efficiency, and span requirements.</li>
+                <li>Designed and 3D printed custom PLA connectors and structural members within an 8-hour print time
+                  budget to complement standard Meccano components.</li>
+                <li>Iterated on design through structural calculations and physical testing, validating failure modes
+                  against analytical predictions.</li>
+                <li>Presented design rationale and experimental results in a formal technical report and team
+                  presentation.</li>
               </ul>
               <h4>Key Outcomes</h4>
               <ul>
-                <li>Applied thermodynamic theory to a real experimental rig, bridging textbook concepts with practical
-                  measurement uncertainty.</li>
-                <li>Developed skills in data quality awareness, thermodynamic state analysis, and engineering technical
-                  reporting.</li>
+                <li>Developed practical structural engineering skills including CAD design, additive manufacturing,
+                  and
+                  live load testing.</li>
+                <li>Gained experience in the full engineering design process: problem definition, concept generation,
+                  analysis, prototyping, and evaluation.</li>
               </ul>
             </div>
             <div class="proj-tech">
-              <span>Thermodynamics</span><span>TESTA Software</span><span>R-134a</span><span>Data
-                Analysis</span><span>Technical Reporting</span>
+              <span>3D Printing (PLA)</span><span>Structural Analysis</span><span>CAD</span><span>Load
+                Testing</span><span>Engineering Design</span>
             </div>
           </div>
         </article>
@@ -862,61 +1013,13 @@
           </div>
         </article>
 
-        <!-- ======= P10: ENG1011 Truss ======= -->
-        <article class="proj-card" data-category="mechanical">
+        <!-- ======= P11: ENG1013 Tank Monitoring System ======= -->
+        <article class="proj-card" data-category="software">
           <div class="proj-images">
             <div class="img-carousel">
-              <img src="images/eng1011_1.jpeg" alt="Truss design testing" class="active" />
-              <img src="images/eng1011_3.jpeg" alt="Truss competition" />
-              <div class="carousel-dots"></div>
-              <button class="carousel-prev">&#8592;</button>
-              <button class="carousel-next">&#8594;</button>
-            </div>
-          </div>
-          <div class="proj-body">
-            <div class="proj-meta">
-              <span class="proj-year">Y1 S2 · ENG1011</span>
-              <span class="proj-type mechanical">Structural Engineering · Design</span>
-            </div>
-            <h3>Optimised Truss Bridge Design &amp; Load Testing</h3>
-            <p>
-              Designed, 3D-printed, and structurally tested a Meccano-and-PLA truss bridge to maximise load-to-weight
-              efficiency over a variable span, applying structural analysis and design optimisation principles.
-            </p>
-            <div class="proj-details">
-              <h4>What I Built</h4>
-              <ul>
-                <li>Applied truss analysis (method of joints/sections) to select an optimal topology balancing load
-                  distribution, material efficiency, and span requirements.</li>
-                <li>Designed and 3D printed custom PLA connectors and structural members within an 8-hour print time
-                  budget to complement standard Meccano components.</li>
-                <li>Iterated on design through structural calculations and physical testing, validating failure modes
-                  against analytical predictions.</li>
-                <li>Presented design rationale and experimental results in a formal technical report and team
-                  presentation.</li>
-              </ul>
-              <h4>Key Outcomes</h4>
-              <ul>
-                <li>Developed practical structural engineering skills including CAD design, additive manufacturing, and
-                  live load testing.</li>
-                <li>Gained experience in the full engineering design process: problem definition, concept generation,
-                  analysis, prototyping, and evaluation.</li>
-              </ul>
-            </div>
-            <div class="proj-tech">
-              <span>3D Printing (PLA)</span><span>Structural Analysis</span><span>CAD</span><span>Load
-                Testing</span><span>Engineering Design</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ======= P11: ENG1013 Tank Design ======= -->
-        <article class="proj-card" data-category="mechanical">
-          <div class="proj-images">
-            <div class="img-carousel">
-              <img src="images/eng1013_1.jpeg" alt="Tank design prototype" class="active" />
-              <img src="images/eng1013_2.jpeg" alt="Tank design detail" />
-              <img src="images/eng1013_3.jpeg" alt="Tank design testing" />
+              <img src="images/eng1013_1.jpeg" alt="ENG1013 tank monitoring system" class="active" />
+              <img src="images/eng1013_2.jpeg" alt="ENG1013 system wiring and setup" />
+              <img src="images/eng1013_3.jpeg" alt="ENG1013 CLI output and testing" />
               <div class="carousel-dots"></div>
               <button class="carousel-prev">&#8592;</button>
               <button class="carousel-next">&#8594;</button>
@@ -925,36 +1028,40 @@
           <div class="proj-body">
             <div class="proj-meta">
               <span class="proj-year">Y1 S1 · ENG1013</span>
-              <span class="proj-type mechanical">Mechanical Design · Fabrication</span>
+              <span class="proj-type software">Embedded · Software · Electrical</span>
             </div>
-            <h3>Engineering Design Project — Task-Performing Tank Robot</h3>
+            <h3>Tank Level Monitoring &amp; Control System</h3>
             <p>
-              First-year design challenge requiring teams to design, build, and demonstrate a tank-style robot capable
-              of completing a specified engineering task, using provided kit components supplemented by student-designed
-              and fabricated parts.
+              Designed and implemented a software and electrical system to monitor a liquid storage tank, reporting
+              real-time sensor data via a CLI interface and triggering automated safety responses including error
+              signals, alerts, and emergency stops.
             </p>
             <div class="proj-details">
               <h4>What I Built</h4>
               <ul>
-                <li>Applied iterative engineering design methodology — requirements analysis, concept generation,
-                  prototyping, and testing — to develop a functional tank mechanism.</li>
-                <li>Fabricated and assembled mechanical components, integrating drivetrain and task-specific mechanisms
-                  within project constraints.</li>
-                <li>Developed and submitted milestone documentation including design specifications, progress reports,
-                  and final design drawings.</li>
-                <li>Demonstrated the completed robot in a live assessment session, completing the required tasks within
-                  time constraints.</li>
+                <li>Interfaced sensors to measure tank parameters (e.g. liquid level, flow) and processed readings to
+                  determine the operational state of the tank system.</li>
+                <li>Developed a CLI-based reporting system to display live tank measurements, status flags, and event
+                  logs in a structured, human-readable format.</li>
+                <li>Implemented error signal generation to flag out-of-range or fault conditions, with configurable
+                  threshold-based alert logic to notify operators of abnormal states.</li>
+                <li>Designed and integrated an emergency stop mechanism that safely halts the system when critical
+                  fault
+                  conditions are detected, preventing overflow or equipment damage.</li>
+                <li>Wrote and tested the control logic for normal operation, alert, and emergency states, ensuring
+                  reliable state transitions under various sensor input conditions.</li>
               </ul>
               <h4>Key Outcomes</h4>
               <ul>
-                <li>Introduced to the full engineering design cycle in a hands-on, team-based context.</li>
-                <li>Built foundational skills in mechanical fabrication, technical documentation, and collaborative
-                  engineering practice.</li>
+                <li>Gained practical experience in embedded systems programming, sensor interfacing, and real-time
+                  control logic from first year.</li>
+                <li>Understood the fundamentals of fault detection, safety interlock design, and operator-facing
+                  software for industrial monitoring systems.</li>
               </ul>
             </div>
             <div class="proj-tech">
-              <span>Mechanical Design</span><span>Fabrication</span><span>Engineering Design
-                Process</span><span>Teamwork</span>
+              <span>Embedded Systems</span><span>CLI Programming</span><span>Sensor Interfacing</span><span>Control
+                Logic</span><span>Safety Systems</span>
             </div>
           </div>
         </article>
@@ -1009,56 +1116,8 @@
           </div>
         </article>
 
-        <!-- ======= P13: ECE4076 Machine Learning ======= -->
-        <article class="proj-card" data-category="robotics">
-          <div class="proj-images">
-            <div class="img-carousel">
-              <img src="images/ece4076_1.png" alt="Fingerprint image processing lab" class="active" />
-              <img src="images/ece4076_2.png" alt="Image stitching and feature matching" />
-              <img src="images/ece4076_3.png" alt="Machine learning model evaluation" />
-              <div class="carousel-dots"></div>
-              <button class="carousel-prev">&#8592;</button>
-              <button class="carousel-next">&#8594;</button>
-            </div>
-          </div>
-          <div class="proj-body">
-            <div class="proj-meta">
-              <span class="proj-year">Y3 S2 · ECE4076</span>
-              <span class="proj-type robotics">Machine Learning · Computer Vision</span>
-            </div>
-            <h3>Computer Vision &amp; Machine Learning Laboratory Work</h3>
-            <p>
-              Completed a series of advanced laboratory tasks applying machine learning and computer vision techniques
-              to real-world image analysis problems, spanning classification, object detection, and deep learning model
-              training.
-            </p>
-            <div class="proj-details">
-              <h4>What I Covered</h4>
-              <ul>
-                <li><strong>Lab 1:</strong> Enhances fingerprint images using filtering and orientation analysis, then
-                  detects minutiae for fingerprint matching.</li>
-                <li><strong>Lab 2:</strong> Implements image stitching by using feature matching, homography estimation,
-                  and blending to align and merge two overlapping images.</li>
-                <li><strong>Lab 3:</strong> Implements k-means clustering to group image pixels by colour (and
-                  optionally location) and uses those groups to create superpixels and region proposals.</li>
-                <li><strong>Lab 4:</strong> Using linear regression to train a model from known data and then predict
-                  values for new examples, including life expectancy and corrupted image restoration.</li>
-              </ul>
-              <h4>Key Outcomes</h4>
-              <ul>
-                <li>Developed practical proficiency in deep learning frameworks and computer vision pipelines.</li>
-                <li>Gained hands-on experience training, evaluating, and improving ML models for engineering
-                  applications.</li>
-              </ul>
-            </div>
-            <div class="proj-tech">
-              <span>Python</span><span>Deep Learning</span><span>CNN</span><span>Computer Vision</span><span>Object
-                Detection</span><span>Transfer Learning</span>
-            </div>
-          </div>
-        </article>
-
       </div><!-- /projects-grid -->
+
     </div>
   </section>
 
@@ -1110,7 +1169,9 @@
           <h4>Kaamatan Festival Volunteer</h4>
           <p>Kingston City Hall, Moorabbin — Supported cultural celebration with a diverse volunteer team.</p>
         </div>
+        <!-- ======= P4: ECE3161 Audio Synthesis + RMS ======= -->
       </div>
+    </div>
     </div>
   </section>
 
@@ -1127,12 +1188,12 @@
         <div class="contact-card">
           <span class="contact-icon">📧</span>
           <h4>Email</h4>
-          <a href="mailto:junhau.chang@student.monash.edu">junhau.chang@student.monash.edu</a>
+          <a href="mailto:junhauchang@gmail.com">junhauchang@gmail.com</a>
         </div>
         <div class="contact-card">
           <span class="contact-icon">💼</span>
           <h4>LinkedIn</h4>
-          <a href="https://linkedin.com/in/jun-hau-chang" target="_blank"
+          <a href="https://www.linkedin.com/in/jun-hau-chang-a58272375/" target="_blank"
             rel="noopener">linkedin.com/in/jun-hau-chang</a>
         </div>
         <div class="contact-card">

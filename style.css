@@ -800,6 +800,7 @@ section { padding: 96px 0; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 24px;
+  align-items: start;
 }
 
 /* ── Project Card ───────────────────────────────────────────── */
