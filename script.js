@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
   lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
-  /* ── Project expand / collapse — hover to open, click to close ── */
+  /* ── Project expand / collapse — click to toggle ── */
   document.querySelectorAll('.proj-card').forEach(card => {
     const details = card.querySelector('.proj-details');
     if (!details) return;
@@ -179,20 +179,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let open = false;
 
-    /* Hover "Read More" → open and keep open */
-    toggle.addEventListener('mouseenter', () => {
-      if (open) return;
-      open = true;
-      card.classList.add('pinned');
-      toggle.textContent = 'Show Less ↑';
-    });
-
-    /* Click "Show Less" → collapse */
     toggle.addEventListener('click', () => {
-      if (!open) return;
-      open = false;
-      card.classList.remove('pinned');
-      toggle.textContent = 'Read More ↓';
+      open = !open;
+      card.classList.toggle('pinned', open);
+      toggle.textContent = open ? 'Show Less ↑' : 'Read More ↓';
     });
   });
 
