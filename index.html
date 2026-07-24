@@ -359,6 +359,71 @@
         <button class="filter-btn" data-filter="software">Software</button>
       </div>
       <div class="projects-grid">
+        <!-- ======= Y3 S1: ECE4078 PenguinPi [FEATURED] ======= -->
+        <article class="proj-card featured" data-category="robotics">
+          <div class="proj-badge">Featured</div>
+          <div class="proj-images">
+            <div class="img-carousel">
+              <img src="images/ece4078_1.jpeg" alt="PenguinPi Robot" class="active" />
+              <img src="images/ece4078_2.jpeg" alt="PenguinPi SLAM" />
+              <img src="images/ece4078_3.jpeg" alt="PenguinPi fruit detection" />
+              <img src="images/ece4078_4.jpeg" alt="PenguinPi arena" />
+              <img src="images/ece4078_5.jpeg" alt="PenguinPi navigation" />
+              <div class="carousel-dots"></div>
+              <button class="carousel-prev">&#8592;</button>
+              <button class="carousel-next">&#8594;</button>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-year">Y3 S1 · ECE4078</span>
+              <span class="proj-type robotics">Robotics · AI · Vision</span>
+            </div>
+            <h3>PenguinPi Autonomous Fruit-Collection Robot</h3>
+            <p>
+              Developed a fully autonomous robotic system capable of perceiving, mapping, and navigating a simulated
+              supermarket arena to collect fruit targets. The project spanned five milestones — from basic
+              teleoperation
+              through to fully autonomous simultaneous mapping and navigation.
+            </p>
+            <div class="proj-details">
+              <h4>What I Built</h4>
+              <ul>
+                <li><strong>SLAM (EKF-based):</strong> Implemented the Extended Kalman Filter for Simultaneous
+                  Localisation and Mapping using ArUco marker detection via OpenCV. Performed wheel and camera
+                  calibration for accurate state estimation.</li>
+                <li><strong>Object Recognition (YOLOv8):</strong> Trained a custom YOLO model to classify 8
+                  fruit/vegetable types. Collected, annotated, and augmented a dataset using Roboflow, achieving
+                  robust
+                  detection across varied lighting and occlusion.</li>
+                <li><strong>Target Pose Estimation:</strong> Estimated 3D object locations by fusing YOLO bounding
+                  boxes, SLAM pose estimates, and known object dimensions into a global map.</li>
+                <li><strong>Autonomous Navigation (A*):</strong> Implemented A* path planning with obstacle avoidance
+                  on
+                  an occupancy map derived from SLAM and object localisation. Integrated PID-based waypoint tracking
+                  for
+                  smooth robot control.</li>
+                <li><strong>Final Demo:</strong> The robot successfully performed fully autonomous mapping and
+                  shopping
+                  list navigation in a live competition-style arena, navigating to targets within 0.3 m using on-board
+                  perception and planning.</li>
+              </ul>
+              <h4>Key Outcomes</h4>
+              <ul>
+                <li>Built a complete perception–planning–control pipeline from sensor data to physical robot action.
+                </li>
+                <li>Developed proficiency in ROS concepts, computer vision, probabilistic robotics, and real-time
+                  systems on embedded Linux hardware.</li>
+                <li>Collaborated in a team environment through multiple software integration milestones.</li>
+              </ul>
+            </div>
+            <div class="proj-tech">
+              <span>Python</span><span>YOLOv8</span><span>OpenCV</span><span>EKF SLAM</span><span>A*
+                Planning</span><span>PID Control</span><span>Linux</span><span>ROS</span>
+            </div>
+          </div>
+        </article>
+
         <article class="proj-card" data-category="robotics">
           <div class="proj-images">
             <div class="img-carousel">
@@ -573,71 +638,6 @@
             <div class="proj-tech">
               <span>LTspice</span><span>Op-Amp Design</span><span>Analogue Circuits</span><span>Precision
                 Electronics</span><span>Signal Analysis</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ======= Y3 S1: ECE4078 PenguinPi [FEATURED] ======= -->
-        <article class="proj-card featured" data-category="robotics">
-          <div class="proj-badge">Featured</div>
-          <div class="proj-images">
-            <div class="img-carousel">
-              <img src="images/ece4078_1.jpeg" alt="PenguinPi Robot" class="active" />
-              <img src="images/ece4078_2.jpeg" alt="PenguinPi SLAM" />
-              <img src="images/ece4078_3.jpeg" alt="PenguinPi fruit detection" />
-              <img src="images/ece4078_4.jpeg" alt="PenguinPi arena" />
-              <img src="images/ece4078_5.jpeg" alt="PenguinPi navigation" />
-              <div class="carousel-dots"></div>
-              <button class="carousel-prev">&#8592;</button>
-              <button class="carousel-next">&#8594;</button>
-            </div>
-          </div>
-          <div class="proj-body">
-            <div class="proj-meta">
-              <span class="proj-year">Y3 S1 · ECE4078</span>
-              <span class="proj-type robotics">Robotics · AI · Vision</span>
-            </div>
-            <h3>PenguinPi Autonomous Fruit-Collection Robot</h3>
-            <p>
-              Developed a fully autonomous robotic system capable of perceiving, mapping, and navigating a simulated
-              supermarket arena to collect fruit targets. The project spanned five milestones — from basic
-              teleoperation
-              through to fully autonomous simultaneous mapping and navigation.
-            </p>
-            <div class="proj-details">
-              <h4>What I Built</h4>
-              <ul>
-                <li><strong>SLAM (EKF-based):</strong> Implemented the Extended Kalman Filter for Simultaneous
-                  Localisation and Mapping using ArUco marker detection via OpenCV. Performed wheel and camera
-                  calibration for accurate state estimation.</li>
-                <li><strong>Object Recognition (YOLOv8):</strong> Trained a custom YOLO model to classify 8
-                  fruit/vegetable types. Collected, annotated, and augmented a dataset using Roboflow, achieving
-                  robust
-                  detection across varied lighting and occlusion.</li>
-                <li><strong>Target Pose Estimation:</strong> Estimated 3D object locations by fusing YOLO bounding
-                  boxes, SLAM pose estimates, and known object dimensions into a global map.</li>
-                <li><strong>Autonomous Navigation (A*):</strong> Implemented A* path planning with obstacle avoidance
-                  on
-                  an occupancy map derived from SLAM and object localisation. Integrated PID-based waypoint tracking
-                  for
-                  smooth robot control.</li>
-                <li><strong>Final Demo:</strong> The robot successfully performed fully autonomous mapping and
-                  shopping
-                  list navigation in a live competition-style arena, navigating to targets within 0.3 m using on-board
-                  perception and planning.</li>
-              </ul>
-              <h4>Key Outcomes</h4>
-              <ul>
-                <li>Built a complete perception–planning–control pipeline from sensor data to physical robot action.
-                </li>
-                <li>Developed proficiency in ROS concepts, computer vision, probabilistic robotics, and real-time
-                  systems on embedded Linux hardware.</li>
-                <li>Collaborated in a team environment through multiple software integration milestones.</li>
-              </ul>
-            </div>
-            <div class="proj-tech">
-              <span>Python</span><span>YOLOv8</span><span>OpenCV</span><span>EKF SLAM</span><span>A*
-                Planning</span><span>PID Control</span><span>Linux</span><span>ROS</span>
             </div>
           </div>
         </article>
